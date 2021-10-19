@@ -7,7 +7,7 @@ function setup(){
   //ellipse(50,50,40);//i=3
 
   for(let i = 0; i < 10; i++){
-    // BLANK[1]
+
     let r=i*10+10;//10ずつ増えている，最初１０だから+10
     if(i<5){//blue
       stroke(0,0,255);
