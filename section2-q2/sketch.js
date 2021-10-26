@@ -21,7 +21,7 @@ function setup() {
        fill(0,0,0);//６〜８列目は黒丸
      　　}
      noStroke();
-     ellipse(size*i+ 25/2, size*j+ 25/2, 20)
+     ellipse(size*i+ size/2, size*j+ size/2, size*0.8)
     }
   }
 }
