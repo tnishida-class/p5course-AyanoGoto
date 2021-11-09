@@ -7,9 +7,11 @@ let balls;
 function setup(){
   createCanvas(windowWidth, windowHeight);
   balls = [];
+  count = 0;
 }
 
 function draw(){
+  count++;
   background(160, 192, 255);
   for(let i = 0; i < balls.length; i++){
     let b = balls[i];
@@ -17,10 +19,10 @@ function draw(){
     b.x += b.vx;
     b.y += b.vy;
   }
-  //if(){
-    //const b = { x: width/2, y: height/2, size: 20, vx: random(2), vy: random(2) };
-    //balls.push(b);
-  //}
+  if(count % 60 == 0){
+    const b = { x: width/2, y: height/2, size: 10, vx: random(-2, 2), vy: random(-1, 1) };
+    balls.push(b);
+  }
 }
 
 function mouseDragged(){
